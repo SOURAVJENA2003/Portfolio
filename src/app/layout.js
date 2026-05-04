@@ -1,6 +1,7 @@
 import "./globals.css";
 import ClientLayout from "@/client-layout";
 import { ViewTransitions } from "next-view-transitions";
+import { ThemeProvider } from "@/context/ThemeContext";
 
 export const metadata = {
   title: "Polite Chaos | Codegrid",
@@ -15,11 +16,13 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body>
-        <ViewTransitions>
-          <ClientLayout>{children}</ClientLayout>
-        </ViewTransitions>
-      </body>
+      <ThemeProvider>
+        <body>
+          <ViewTransitions>
+            <ClientLayout>{children}</ClientLayout>
+          </ViewTransitions>
+        </body>
+      </ThemeProvider>
     </html>
   );
 }

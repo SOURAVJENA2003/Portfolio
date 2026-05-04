@@ -1,0 +1,42 @@
+.theme-toggle {
+  background: none;
+  border: 1px solid var(--base-300);
+  padding: 0.5rem 1rem;
+  border-radius: 2rem;
+  cursor: pointer;
+  overflow: hidden;
+  height: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.theme-toggle-wrapper {
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.5s cubic-bezier(0.76, 0, 0.24, 1);
+}
+
+[data-theme="dark"] .theme-toggle-wrapper {
+  transform: translateY(-100%);
+}
+
+.theme-toggle p {
+  font-family: "Geist Mono";
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  color: var(--base-300);
+  height: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+}
+
+.theme-toggle p.active {
+  color: var(--base-400);
+}
+
+.theme-toggle:hover {
+  border-color: var(--base-400);
+}

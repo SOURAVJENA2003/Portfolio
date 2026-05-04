@@ -12,6 +12,7 @@ import Preloader, { isInitialLoad } from "@/components/Preloader/Preloader";
 import React, { useEffect } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import ThemeToggle from "@/components/ThemeToggle/ThemeToggle";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -58,9 +59,14 @@ const Page = () => {
                 </p>
               </Copy>
 
-              <Button delay={isInitialLoad ? 6.35 : 1.55} href="/studio">
-                About Sourav
-              </Button>
+              <div className="hero-cta">
+                <Button delay={isInitialLoad ? 6.35 : 1.55} href="/studio">
+                  About Sourav
+                </Button>
+                <div className="hero-theme-toggle" style={{ animationDelay: `${isInitialLoad ? 6.35 : 1.55}s` }}>
+                   <ThemeToggle />
+                </div>
+              </div>
             </div>
           </div>
         </div>

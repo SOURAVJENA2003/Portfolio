@@ -143,7 +143,7 @@
 .folders .folder.variant-2 .folder-index::after,
 .folders .folder.variant-2 .folder-name {
   background-color: var(--variant-2);
-  color: #fff;
+  color: var(--base-100);
 }
 
 .folders .folder.variant-3 .folder-index,

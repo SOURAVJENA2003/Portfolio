@@ -6,6 +6,7 @@ import { SplitText } from "gsap/all";
 import { useGSAP } from "@gsap/react";
 import { useLenis } from "lenis/react";
 import { useViewTransition } from "@/hooks/useViewTransition";
+import ThemeToggle from "@/components/ThemeToggle/ThemeToggle";
 
 gsap.registerPlugin(useGSAP, SplitText);
 
@@ -472,15 +473,18 @@ const Menu = ({ pageRef }) => {
           </a>
         </div>
 
-        <div className="nav-toggle" ref={navToggleRef} onClick={toggleMenu}>
-          <div className="nav-toggle-wrapper">
-            <p ref={openLabelRef} className="open-label">
-              Menu
-            </p>
+        <div className="nav-controls">
+          <ThemeToggle />
+          <div className="nav-toggle" ref={navToggleRef} onClick={toggleMenu}>
+            <div className="nav-toggle-wrapper">
+              <p ref={openLabelRef} className="open-label">
+                Menu
+              </p>
 
-            <p ref={closeLabelRef} className="close-label">
-              Close
-            </p>
+              <p ref={closeLabelRef} className="close-label">
+                Close
+              </p>
+            </div>
           </div>
         </div>
       </nav>
