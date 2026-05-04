@@ -12,7 +12,7 @@ gsap.registerPlugin(useGSAP);
 const Footer = () => {
   const footerRef = useRef(null);
   const explosionContainerRef = useRef(null);
-  const [torontoTime, setTorontoTime] = useState("");
+  const [localTime, setLocalTime] = useState("");
 
   const config = {
     gravity: 0.25,
@@ -31,9 +31,9 @@ const Footer = () => {
   );
 
   useEffect(() => {
-    const updateTorontoTime = () => {
+    const updateLocalTime = () => {
       const options = {
-        timeZone: "America/Toronto",
+        timeZone: "Asia/Kolkata",
         hour: "2-digit",
         minute: "2-digit",
         second: "2-digit",
@@ -41,12 +41,12 @@ const Footer = () => {
       };
 
       const formatter = new Intl.DateTimeFormat("en-US", options);
-      const torontoTimeString = formatter.format(new Date());
-      setTorontoTime(torontoTimeString);
+      const localTimeString = formatter.format(new Date());
+      setLocalTime(localTimeString);
     };
 
-    updateTorontoTime();
-    const timeInterval = setInterval(updateTorontoTime, 1000);
+    updateLocalTime();
+    const timeInterval = setInterval(updateLocalTime, 1000);
 
     return () => clearInterval(timeInterval);
   }, []);
@@ -221,16 +221,16 @@ const Footer = () => {
         <div className="footer-byline">
           <div className="footer-time">
             <p>
-              Toronto, ON <span>{torontoTime}</span>
+              Bhubaneswar, OD <span>{localTime}</span>
             </p>
           </div>
 
           <div className="footer-author">
-            <p>Developed by Codegrid</p>
+            <p>Developed by Sourav Jena</p>
           </div>
 
           <div className="footer-copyright">
-            <p>&copy; Polite Chaos</p>
+            <p>&copy; Sourav Jena</p>
           </div>
         </div>
       </div>

@@ -12,6 +12,7 @@ import Preloader, { isInitialLoad } from "@/components/Preloader/Preloader";
 import React, { useEffect } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import ThemeToggle from "@/components/ThemeToggle/ThemeToggle";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -38,28 +39,34 @@ const Page = () => {
           <div className="hero-content-main">
             <div className="hero-header">
               <Copy animateOnScroll={false} delay={isInitialLoad ? 5.75 : 0.75}>
-                <h1>Crafting Digital Worlds with a Bit of Mischief</h1>
+                <h1>Building Scalable Systems with Precision & Logic</h1>
               </Copy>
             </div>
 
             <div className="hero-footer-outer">
               <Copy animateOnScroll={false} delay={isInitialLoad ? 6.35 : 1.65}>
-                <p className="sm">&copy; Codegrid Dept.</p>
-                <p className="sm">( Workroom 101 )</p>
+                <p className="sm">&copy; Sourav Jena</p>
+                <p className="sm">( KIIT University )</p>
               </Copy>
             </div>
 
             <div className="hero-footer">
               <Copy animateOnScroll={false} delay={isInitialLoad ? 6.05 : 1.15}>
                 <p className="lg">
-                  We build visuals, stories, and systems for people who like
-                  their creativity a little unpredictable.
+                  Computer Science student with strong skills in DSA and
+                  full-stack web development. I build secure, efficient
+                  applications that solve real-world problems.
                 </p>
               </Copy>
 
-              <Button delay={isInitialLoad ? 6.35 : 1.55} href="/studio">
-                Visit the Studio
-              </Button>
+              <div className="hero-cta">
+                <Button delay={isInitialLoad ? 6.35 : 1.55} href="/studio">
+                  About Sourav
+                </Button>
+                <div className="hero-theme-toggle" style={{ animationDelay: `${isInitialLoad ? 6.35 : 1.55}s` }}>
+                   <ThemeToggle />
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -72,7 +79,7 @@ const Page = () => {
           <div className="featured-work-header-content">
             <div className="featured-work-header">
               <Copy animateOnScroll={true} delay={0.25}>
-                <h1>Featured Work</h1>
+                <h1>Selected Projects</h1>
               </Copy>
             </div>
 
@@ -104,8 +111,9 @@ const Page = () => {
             <div className="featured-work-header-copy">
               <Copy animateOnScroll={true} delay={0.25}>
                 <p className="lg">
-                  From motion to concept, pieces born from quiet sketches, late
-                  nights, and just the right amount of chaos.
+                  A collection of projects ranging from full-stack creator
+                  platforms to secure password managers and algorithmic
+                  optimizations.
                 </p>
               </Copy>
             </div>
@@ -120,7 +128,7 @@ const Page = () => {
           <div className="client-reviews-header-content">
             <div className="client-reviews-header">
               <Copy animateOnScroll={true} delay={0.25}>
-                <h1>People Approved</h1>
+                <h1>Collaborator Feedback</h1>
               </Copy>
             </div>
 
@@ -152,8 +160,8 @@ const Page = () => {
             <div className="client-reviews-header-copy">
               <Copy animateOnScroll={true} delay={0.25}>
                 <p className="lg">
-                  Unfiltered thoughts from the people who survived our creative
-                  process. Or at least that’s what they told us.
+                  Feedback from collaborators and peers who have worked with me
+                  on various technical projects and challenges.
                 </p>
               </Copy>
             </div>

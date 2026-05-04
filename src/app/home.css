@@ -30,6 +30,28 @@
   gap: 2rem;
 }
 
+.hero-cta {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.hero-theme-toggle {
+  opacity: 0;
+  animation: fadeInHeroToggle 0.5s forwards;
+}
+
+@keyframes fadeInHeroToggle {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 .hero .container .hero-content-main .hero-footer p.mn {
   color: var(--base-300);
 }

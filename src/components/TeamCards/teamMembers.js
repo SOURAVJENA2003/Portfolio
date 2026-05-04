@@ -1,42 +1,42 @@
 export const teamMembers = [
   {
     id: "card-1",
-    name: "Lina Duarte",
+    name: "Sourav Jena (Full-Stack)",
     img: "/team-cards/team-member-1.jpg",
-    alt: "Lina Duarte",
+    alt: "Sourav Jena",
     description:
-      "Visual designer and chaos theorist. Loves asymmetry, strong coffee, and turning color palettes into emotional damage.",
+      "Computer Science student at KIIT University with strong skills in full-stack web development using Next.js and MongoDB.",
   },
   {
     id: "card-2",
-    name: "Kenji Mori",
+    name: "Sourav Jena (DSA)",
     img: "/team-cards/team-member-2.jpg",
-    alt: "Kenji Mori",
+    alt: "Sourav Jena",
     description:
-      "3D artist, lighting whisperer, and part-time philosopher. Spends half his life rendering and the other half pretending it is done.",
+      "Solved 250+ Data Structures and Algorithms problems across platforms like LeetCode, focusing on efficient implementations.",
   },
   {
     id: "card-3",
-    name: "Amara Singh",
+    name: "Sourav Jena (Backend)",
     img: "/team-cards/team-member-3.jpg",
-    alt: "Amara Singh",
+    alt: "Sourav Jena",
     description:
-      "Motion director and timing addict. Can make anything feel cinematic — even an error message.",
+      "Built secure backend systems using Node.js, Express, and MongoDB with a focus on data integrity and security.",
   },
   {
     id: "card-4",
-    name: "Felix Turner",
+    name: "Sourav Jena (Security)",
     img: "/team-cards/team-member-4.jpg",
-    alt: "Felix Turner",
+    alt: "Sourav Jena",
     description:
-      "Creative technologist who codes feelings. Loves shaders, hates meetings, lives somewhere between HTML and heartbreak.",
+      "Implemented secure authentication and payment workflows, including OAuth, Razorpay, and HMAC signature verification.",
   },
   {
     id: "card-5",
-    name: "Isolde Rey",
+    name: "Sourav Jena (Student)",
     img: "/team-cards/team-member-5.jpg",
-    alt: "Isolde Rey",
+    alt: "Sourav Jena",
     description:
-      "Producer and chaos organizer. Keeps everyone alive, on schedule, and slightly over-caffeinated. Probably the only adult here.",
+      "Currently pursuing B.Tech in CSE at KIIT University with a CGPA of 8.72 and a passion for software engineering.",
   },
 ];

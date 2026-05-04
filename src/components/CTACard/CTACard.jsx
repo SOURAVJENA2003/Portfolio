@@ -11,15 +11,16 @@ const CTACard = () => {
         <div className="cta-copy">
           <div className="cta-col">
             <Copy animateOnScroll={true}>
-              <p className="sm">Part of the collective</p>
+              <p className="sm">Current Focus</p>
             </Copy>
           </div>
 
           <div className="cta-col">
             <Copy animateOnScroll={true}>
               <p className="lg">
-                Polite Chaos is connected to The Noise Network, a collective of
-                studios exploring digital art as emotion, motion, and code.
+                Currently looking for internship opportunities to apply my
+                skills in full-stack development and DSA to solve real-world
+                problems.
               </p>
             </Copy>
 
@@ -29,7 +30,7 @@ const CTACard = () => {
               variant="dark"
               href="/contact"
             >
-              Drop your portfolio
+              Get in Touch
             </Button>
           </div>
         </div>
@@ -38,22 +39,22 @@ const CTACard = () => {
           <div className="cta-card-copy">
             <div className="cta-card-col">
               <Copy animateOnScroll={true}>
-                <h3>Secret Department</h3>
+                <h3>Technical Philosophy</h3>
               </Copy>
             </div>
 
             <div className="cta-card-col">
               <Copy animateOnScroll={true}>
                 <p>
-                  We like to think we build order out of chaos, but it’s usually
-                  the other way around. Every project starts as a mess of
-                  sketches and motion tests.
+                  I believe in writing clean, efficient code that is both
+                  scalable and secure. Every project is an opportunity to
+                  optimize performance and enhance user experience.
                 </p>
 
                 <p>
-                  If something feels too polished, we probably broke it on
-                  purpose and rebuilt it slightly wrong, just enough to feel
-                  human.
+                  From designing robust MongoDB schemas to implementing secure
+                  OAuth flows, I strive for technical excellence in every line
+                  of code I ship.
                 </p>
               </Copy>
 
@@ -64,7 +65,7 @@ const CTACard = () => {
                 icon={MdArticle}
                 href="/studio"
               >
-                Read the theory
+                About My Process
               </Button>
             </div>
           </div>

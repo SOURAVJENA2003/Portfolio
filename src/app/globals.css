@@ -20,15 +20,34 @@
   --disabled-folder-fg: #989b95;
 }
 
+[data-theme="dark"] {
+  --base-100: #000000;
+  --base-200: #111111;
+  --base-300: #888888;
+  --base-400: #e3e3db;
+  --base-500: #ff6e14;
+
+  --variant-1: var(--base-200);
+  --variant-2: var(--base-400);
+  --variant-3: var(--base-500);
+  --disabled-folder-bg: #222222;
+  --disabled-folder-fg: #666666;
+}
+
+[data-theme="dark"] .nav-logo img {
+  filter: invert(1);
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   -webkit-tap-highlight-color: transparent;
+  transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
 }
 
 body {
-  background-color: #000;
+  background-color: var(--base-100);
   color: var(--base-400);
   overflow-x: hidden;
 }

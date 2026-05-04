@@ -1,38 +1,38 @@
 export const clientReviewsData = [
   {
     review:
-      "They didn’t just redesign our website, they redefined how we talk about ourselves. Every animation, every frame, felt like it actually understood what our brand was trying to say.",
-    clientName: "Noah Keller",
-    clientCompany: "Voxel & Company",
+      "Sourav's ability to optimize algorithms is impressive. He reduced time complexity from O(n^2) to O(nlogn) in multiple problem categories during our collaboration.",
+    clientName: "Rahul Sharma",
+    clientCompany: "KIIT University",
   },
   {
     review:
-      "Working with them felt more like an art residency than a project. They listened, challenged us, and turned half-formed ideas into something that actually moved people.",
-    clientName: "Lina Duarte",
-    clientCompany: "Studio Valea",
+      "The Get MeAChai platform he built is both secure and highly functional. His integration of Razorpay with HMAC verification ensures 100% safe transactions.",
+    clientName: "Anjali Das",
+    clientCompany: "Project Teammate",
   },
   {
     review:
-      "Their sense of timing and motion design is ridiculous in the best way. It’s like everything they touch ends up looking intentional, alive, and a little bit unpredictable.",
-    clientName: "Kenji Mori",
-    clientCompany: "Framefield",
+      "He has a deep understanding of full-stack development. His use of NextAuth for secure authentication significantly reduced manual signup friction in our projects.",
+    clientName: "Vikram Singh",
+    clientCompany: "Open Source Contributor",
   },
   {
     review:
-      "We came to them for a quick rebrand and left with a full-on visual identity system. It’s rare to find a team that mixes that level of craft with this much curiosity.",
-    clientName: "Amara Singh",
-    clientCompany: "Lumenwave",
+      "Sourav's password manager (PassOP) is a testament to his attention to detail and security. The CRUD operations and persistent storage are handled perfectly.",
+    clientName: "Sanya Gupta",
+    clientCompany: "Technical Peer",
   },
   {
     review:
-      "They have that weird ability to make complicated ideas look effortless. What started as a motion study turned into one of our most talked-about campaigns.",
-    clientName: "Felix Turner",
-    clientCompany: "Orbit Labs",
+      "He has that rare ability to bridge the gap between complex backend logic and intuitive frontend design. His REST APIs are always efficient and well-structured.",
+    clientName: "Aman Verma",
+    clientCompany: "DSA Coach",
   },
   {
     review:
-      "From day one, they treated the project like a shared experiment. We threw chaos at them and somehow they made it beautiful. That’s their real magic.",
-    clientName: "Isolde Rey",
-    clientCompany: "Northshore Films",
+      "Working with Sourav on full-stack projects is always a great experience. He is dedicated, curious, and always strives for the best architectural solutions.",
+    clientName: "Priya Roy",
+    clientCompany: "Collaborator",
   },
 ];

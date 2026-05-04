@@ -21,6 +21,12 @@ nav .nav-logo img {
   object-fit: cover;
 }
 
+.nav-controls {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
 nav .nav-toggle {
   cursor: pointer;
 }

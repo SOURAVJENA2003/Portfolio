@@ -6,6 +6,7 @@ import { SplitText } from "gsap/all";
 import { useGSAP } from "@gsap/react";
 import { useLenis } from "lenis/react";
 import { useViewTransition } from "@/hooks/useViewTransition";
+import ThemeToggle from "@/components/ThemeToggle/ThemeToggle";
 
 gsap.registerPlugin(useGSAP, SplitText);
 
@@ -472,15 +473,18 @@ const Menu = ({ pageRef }) => {
           </a>
         </div>
 
-        <div className="nav-toggle" ref={navToggleRef} onClick={toggleMenu}>
-          <div className="nav-toggle-wrapper">
-            <p ref={openLabelRef} className="open-label">
-              Menu
-            </p>
+        <div className="nav-controls">
+          <ThemeToggle />
+          <div className="nav-toggle" ref={navToggleRef} onClick={toggleMenu}>
+            <div className="nav-toggle-wrapper">
+              <p ref={openLabelRef} className="open-label">
+                Menu
+              </p>
 
-            <p ref={closeLabelRef} className="close-label">
-              Close
-            </p>
+              <p ref={closeLabelRef} className="close-label">
+                Close
+              </p>
+            </div>
           </div>
         </div>
       </nav>
@@ -494,24 +498,24 @@ const Menu = ({ pageRef }) => {
             }}
           >
             <div className="menu-content-group">
-              <p>&copy; Polite Chaos</p>
-              <p>Seaside Studio Block</p>
-              <p>Oslo</p>
+              <p>&copy; Sourav Jena</p>
+              <p>KIIT University</p>
+              <p>Bhubaneswar, Odisha</p>
             </div>
 
             <div className="menu-content-group">
               <p>Edition</p>
-              <p>Late Vol. 04</p>
+              <p>Portfolio Vol. 01</p>
             </div>
 
             <div className="menu-content-group">
               <p>Say Hello</p>
-              <p>hi@politechaos.com</p>
+              <p>souravjena466@gmail.com</p>
             </div>
 
             <div className="menu-content-group">
-              <p>Hotline</p>
-              <p>+47 9824 554321</p>
+              <p>Phone</p>
+              <p>+91 8260832451</p>
             </div>
           </div>
           <div
@@ -523,24 +527,24 @@ const Menu = ({ pageRef }) => {
             <div className="menu-content-group">
               <p>Field Log</p>
 
-              <a href="https://www.instagram.com/codegridweb/" target="_blank">
-                Instagram
+              <a href="https://github.com/SOURAVJENA2003" target="_blank">
+                GitHub
               </a>
 
-              <a href="https://www.youtube.com/@codegrid" target="_blank">
-                YouTube
+              <a href="https://linkedin.com/in/sourav-jena" target="_blank">
+                LinkedIn
               </a>
             </div>
 
             <div className="menu-content-group">
               <p>Language</p>
-              <p>Human</p>
+              <p>Human / Code</p>
             </div>
 
             <div className="menu-content-group">
               <p>Credits</p>
-              <p>Made by Codegrid</p>
-              <p>MWT. OCT2025</p>
+              <p>Made by Sourav Jena</p>
+              <p>MWT. MAY2026</p>
             </div>
           </div>
         </div>
