@@ -4,8 +4,8 @@ import { ViewTransitions } from "next-view-transitions";
 import { ThemeProvider } from "@/context/ThemeContext";
 
 export const metadata = {
-  title: "Polite Chaos | Codegrid",
-  description: "MWT by Codegrid",
+  title: "Sourav Jena | Full-Stack Developer Portfolio",
+  description: "Computer Science student specializing in building scalable systems with precision and logic. Explore projects in full-stack development, DSA, and secure applications.",
   icons: {
     icon: "/site-logo.png",
     shortcut: "/site-logo.png",
