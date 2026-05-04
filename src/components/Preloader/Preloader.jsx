@@ -202,7 +202,7 @@ const Preloader = () => {
       </div>
 
       <div className="preloader-header">
-        <h1>Polite Chaos</h1>
+        <h1>Sourav Jena</h1>
       </div>
     </>
   );

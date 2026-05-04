@@ -16,7 +16,7 @@ const Page = () => {
     () => [
       {
         index: "01",
-        name: "Citychild",
+        name: "Get MeAChai",
         href: "/sample-project",
         variant: "variant-1",
         images: [
@@ -27,7 +27,7 @@ const Page = () => {
       },
       {
         index: "02",
-        name: "Chrome Saint",
+        name: "PassOP",
         href: "/sample-project",
         variant: "variant-2",
         images: [
@@ -38,7 +38,7 @@ const Page = () => {
       },
       {
         index: "03",
-        name: "G-Dream",
+        name: "DSA Master",
         href: "/sample-project",
         variant: "variant-2",
         images: [
@@ -49,7 +49,7 @@ const Page = () => {
       },
       {
         index: "04",
-        name: "Stoneface",
+        name: "Security",
         href: "/sample-project",
         variant: "variant-3",
         images: [
@@ -60,7 +60,7 @@ const Page = () => {
       },
       {
         index: "05",
-        name: "Amber Cloak",
+        name: "Tech Stack",
         href: "/sample-project",
         variant: "variant-1",
         images: [
@@ -71,7 +71,7 @@ const Page = () => {
       },
       {
         index: "06",
-        name: "Paper Blade",
+        name: "Education",
         href: "/sample-project",
         variant: "variant-2",
         images: [
