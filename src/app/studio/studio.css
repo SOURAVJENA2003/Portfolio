@@ -64,9 +64,32 @@
 }
 
 @media (max-width: 1000px) {
+  .studio-page .studio-header {
+    height: 60svh;
+  }
+
+  .studio-page .studio-header .container .studio-header-row h1 {
+    font-size: 18vw;
+  }
+
+  .studio-page .studio-copy .container {
+    gap: 2rem;
+    padding-bottom: 4rem;
+  }
+
   .studio-page .studio-copy .studio-copy-img,
   .studio-page .studio-copy p {
     width: 100%;
+  }
+
+  .studio-page .studio-copy .studio-copy-img {
+    margin-bottom: 2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .studio-page .studio-header .container .studio-header-row h1 {
+    font-size: 22vw;
   }
 }
 

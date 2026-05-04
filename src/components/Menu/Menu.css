@@ -248,12 +248,28 @@ nav .close-label {
 
   .menu-overlay .menu-links-wrapper {
     flex-direction: column;
-    gap: 0;
+    gap: 1rem;
+    width: 100%;
+    bottom: 5rem;
   }
 
   .menu-overlay .menu-link a {
-    font-size: 4rem;
+    font-size: clamp(3rem, 15vw, 5rem);
     letter-spacing: -0.05rem;
+  }
+}
+
+@media (max-width: 480px) {
+  nav {
+    padding: 1rem;
+  }
+  
+  nav .nav-logo a {
+    width: 4.5rem;
+  }
+
+  .menu-overlay .menu-links-wrapper {
+    bottom: 2rem;
   }
 }
 

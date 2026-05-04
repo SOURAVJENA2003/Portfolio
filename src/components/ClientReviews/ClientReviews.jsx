@@ -1,6 +1,6 @@
 "use client";
 import "./ClientReviews.css";
-import { clientReviewsData } from "./clientReviewsData.js";
+import { servicesData } from "./clientReviewsData.js";
 import { useRef } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
@@ -8,35 +8,33 @@ import { useGSAP } from "@gsap/react";
 
 gsap.registerPlugin(useGSAP, ScrollTrigger);
 
-const ClientReviews = () => {
-  const clientReviewsContainerRef = useRef(null);
+const ServicesSection = () => {
+  const servicesSectionRef = useRef(null);
 
   useGSAP(
     () => {
       const mm = gsap.matchMedia();
 
       mm.add("(min-width: 1000px)", () => {
-        const reviewCards = document.querySelectorAll(".review-card");
+        const serviceCards = document.querySelectorAll(".service-card");
         const cardContainers = document.querySelectorAll(
-          ".review-card-container"
+          ".service-card-container"
         );
 
         cardContainers.forEach((cardContainer, index) => {
           const rotation = index % 2 === 0 ? 3 : -3;
           gsap.set(cardContainer, { rotation: rotation });
-
-          const computedStyle = window.getComputedStyle(cardContainer);
         });
 
         const scrollTriggerInstances = [];
 
         gsap.delayedCall(0.1, () => {
-          reviewCards.forEach((card, index) => {
-            if (index < reviewCards.length - 1) {
+          serviceCards.forEach((card, index) => {
+            if (index < serviceCards.length - 1) {
               const trigger = ScrollTrigger.create({
                 trigger: card,
                 start: "top top",
-                endTrigger: reviewCards[reviewCards.length - 1],
+                endTrigger: serviceCards[serviceCards.length - 1],
                 end: "top top",
                 pin: true,
                 pinSpacing: false,
@@ -45,9 +43,9 @@ const ClientReviews = () => {
               scrollTriggerInstances.push(trigger);
             }
 
-            if (index < reviewCards.length - 1) {
+            if (index < serviceCards.length - 1) {
               const trigger = ScrollTrigger.create({
-                trigger: reviewCards[index + 1],
+                trigger: serviceCards[index + 1],
                 start: "top bottom",
                 end: "top top",
               });
@@ -71,12 +69,12 @@ const ClientReviews = () => {
       });
 
       mm.add("(max-width: 999px)", () => {
-        const reviewCards = document.querySelectorAll(".review-card");
+        const serviceCards = document.querySelectorAll(".service-card");
         const cardContainers = document.querySelectorAll(
-          ".review-card-container"
+          ".service-card-container"
         );
 
-        reviewCards.forEach((card) => {
+        serviceCards.forEach((card) => {
           if (card) gsap.set(card, { clearProps: "all" });
         });
         cardContainers.forEach((cardContainer) => {
@@ -102,26 +100,24 @@ const ClientReviews = () => {
         mm.revert();
       };
     },
-    { scope: clientReviewsContainerRef }
+    { scope: servicesSectionRef }
   );
 
   return (
-    <div className="client-reviews" ref={clientReviewsContainerRef}>
-      {clientReviewsData.map((item, index) => (
-        <div className="review-card" key={index}>
+    <div className="services-section" ref={servicesSectionRef}>
+      {servicesData.map((item, index) => (
+        <div className="service-card" key={item.title}>
           <div
-            className="review-card-container"
-            id={`review-card-${index + 1}`}
+            className="service-card-container"
+            id={`service-card-${index + 1}`}
           >
-            <div className="review-card-content">
-              <div className="review-card-content-wrapper">
-                <h3 className="review-card-text lg">{item.review}</h3>
-                <div className="review-card-client-info">
-                  <p className="review-card-client cap">{item.clientName}</p>
-                  <p className="review-card-client-company sm">
-                    {item.clientCompany}
-                  </p>
-                </div>
+            <div className="service-card-content">
+              <div className="service-card-content-wrapper">
+                {/* <p className="service-card-label sm">Service {index + 1}</p> */}
+                <h3 className="service-card-title">{item.title}</h3>
+                <p className="service-card-description lg">
+                  {item.description}
+                </p>
               </div>
             </div>
           </div>
@@ -131,4 +127,4 @@ const ClientReviews = () => {
   );
 };
 
-export default ClientReviews;
+export default ServicesSection;

@@ -124,7 +124,13 @@
 
 @media (max-width: 1000px) {
   .sample-project-page .project-header {
-    padding: 1.25em 1.25em 3em 1.25em;
+    height: auto;
+    min-height: 40svh;
+    padding: 8rem 1.25em 3em 1.25em;
+  }
+
+  .sample-project-page .project-banner-img {
+    height: 50svh;
   }
 
   .sample-project-page .project-details {
@@ -147,14 +153,31 @@
   }
 
   .sample-project-page .next-project {
-    padding: 1.25em;
+    height: auto;
+    min-height: 80svh;
+    padding: 6rem 1.25em;
   }
 
   .sample-project-page .next-project-img {
-    width: 75%;
+    width: 100%;
+    height: 300px;
   }
 
   .sample-project-page .project-img {
-    height: 65svh;
+    height: 40svh;
+  }
+}
+
+@media (max-width: 480px) {
+  .sample-project-page .project-banner-img {
+    height: 40svh;
+  }
+  
+  .sample-project-page .project-img {
+    height: 30svh;
+  }
+  
+  .sample-project-page .next-project-img {
+    height: 250px;
   }
 }

@@ -1,11 +1,11 @@
-.client-reviews {
+.services-section {
   position: relative;
   width: 100%;
   height: 100%;
   background-color: var(--base-100);
 }
 
-.client-reviews .review-card {
+.services-section .service-card {
   position: relative;
   width: 100%;
   height: 100svh;
@@ -16,96 +16,104 @@
   gap: 3rem;
 }
 
-.client-reviews .review-card-container {
+.services-section .service-card-container {
   position: relative;
   width: 60%;
-  height: 50%;
+  height: 60%;
   display: flex;
   padding: 2rem;
   border-radius: 1rem;
   will-change: transform;
 }
 
-.client-reviews #review-card-1 {
+.services-section #service-card-1 {
   background-color: var(--base-200);
 }
 
-.client-reviews #review-card-2 {
+.services-section #service-card-2 {
   background-color: var(--base-400);
   color: var(--base-100);
 }
 
-.client-reviews #review-card-3 {
+.services-section #service-card-3 {
   background-color: var(--accent-1);
   color: var(--base-100);
 }
 
-.client-reviews #review-card-4 {
+.services-section #service-card-4 {
   background-color: var(--base-200);
 }
 
-.client-reviews #review-card-5 {
+.services-section #service-card-5 {
   background-color: var(--base-500);
 }
 
-.client-reviews #review-card-6 {
+.services-section #service-card-6 {
   background-color: var(--base-400);
   color: var(--base-100);
 }
 
-.client-reviews .review-card-content-wrapper {
+.services-section .service-card-content,
+.services-section .service-card-content-wrapper {
   width: 100%;
   height: 100%;
+}
+
+.services-section .service-card-content-wrapper {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
   text-align: center;
 }
 
-.client-reviews h3.review-card-text {
-  font-size: 3rem;
-  letter-spacing: 0;
+.services-section .service-card-label {
+  letter-spacing: 0.12em;
+  opacity: 0.65;
+  text-transform: uppercase;
 }
 
-.client-reviews p.sm.review-card-client-company {
-  color: var(--base-100);
-  opacity: 0.4;
+.services-section .service-card-title {
+  max-width: 12ch;
+  font-size: clamp(2.5rem, 4vw, 4.5rem);
+  line-height: 0.95;
+  letter-spacing: -0.05em;
 }
 
-.client-reviews #review-card-1 p.sm.review-card-client-company,
-.client-reviews #review-card-4 p.sm.review-card-client-company,
-.client-reviews #review-card-5 p.sm.review-card-client-company {
-  color: var(--base-400);
+.services-section .service-card-description {
+  max-width: 34rem;
+  color: inherit;
+  opacity: 0.78;
 }
 
 @media (max-width: 1000px) {
-  .client-reviews .review-card-container {
+  .services-section .service-card {
+    height: auto;
+    min-height: 80svh;
+    padding: 6rem 1.25rem;
+  }
+
+  .services-section .service-card-container {
     flex-direction: column;
     gap: 0;
-    width: 90%;
-    height: 100%;
-    padding: 1.25rem;
-  }
-
-  .client-reviews .review-card-content-wrapper {
     width: 100%;
+    height: auto;
+    min-height: 400px;
+    padding: 2rem 1.25rem;
+  }
+
+  .services-section .service-card-content-wrapper {
     justify-content: center;
-    gap: 2rem;
+    gap: 1.25rem;
   }
 
-  .client-reviews .review-card-index {
-    flex: 1;
+  .services-section .service-card-title {
+    max-width: 100%;
+    font-size: clamp(2rem, 10vw, 3rem);
   }
 
-  .client-reviews .review-card-content {
-    height: 100%;
-  }
-
-  .client-reviews h3.review-card-text {
-    font-size: 2rem;
-  }
-
-  .client-reviews .review-card {
-    padding: 1.25rem 0 0 0;
+  .services-section .service-card-description {
+    max-width: 100%;
   }
 }

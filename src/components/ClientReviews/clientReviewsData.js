@@ -1,38 +1,32 @@
-export const clientReviewsData = [
+export const servicesData = [
   {
-    review:
-      "Sourav's ability to optimize algorithms is impressive. He reduced time complexity from O(n^2) to O(nlogn) in multiple problem categories during our collaboration.",
-    clientName: "Rahul Sharma",
-    clientCompany: "KIIT University",
+    title: "Full-Stack Web Development",
+    description:
+      "I build complete web applications from frontend interfaces to backend systems, focusing on clean UX, scalable architecture, and dependable performance.",
   },
   {
-    review:
-      "The Get MeAChai platform he built is both secure and highly functional. His integration of Razorpay with HMAC verification ensures 100% safe transactions.",
-    clientName: "Anjali Das",
-    clientCompany: "Project Teammate",
+    title: "Backend APIs & Database Design",
+    description:
+      "I create secure APIs, authentication flows, and database structures that keep applications fast, organized, and ready to grow with real usage.",
   },
   {
-    review:
-      "He has a deep understanding of full-stack development. His use of NextAuth for secure authentication significantly reduced manual signup friction in our projects.",
-    clientName: "Vikram Singh",
-    clientCompany: "Open Source Contributor",
+    title: "Authentication & Security",
+    description:
+      "I implement secure login systems, protected routes, and payment verification workflows so products are safer for both users and business logic.",
   },
   {
-    review:
-      "Sourav's password manager (PassOP) is a testament to his attention to detail and security. The CRUD operations and persistent storage are handled perfectly.",
-    clientName: "Sanya Gupta",
-    clientCompany: "Technical Peer",
+    title: "DSA & Problem Solving",
+    description:
+      "I use strong data structures and algorithmic thinking to solve logic-heavy problems, improve efficiency, and handle complex engineering challenges.",
   },
   {
-    review:
-      "He has that rare ability to bridge the gap between complex backend logic and intuitive frontend design. His REST APIs are always efficient and well-structured.",
-    clientName: "Aman Verma",
-    clientCompany: "DSA Coach",
+    title: "Performance Optimization",
+    description:
+      "I analyze existing systems, refactor bottlenecks, and improve speed, maintainability, and code quality across both frontend and backend workflows.",
   },
   {
-    review:
-      "Working with Sourav on full-stack projects is always a great experience. He is dedicated, curious, and always strives for the best architectural solutions.",
-    clientName: "Priya Roy",
-    clientCompany: "Collaborator",
+    title: "Project Support & Iteration",
+    description:
+      "I help shape ideas into working products, whether that means building from scratch, refining features, fixing issues, or improving the overall architecture.",
   },
 ];

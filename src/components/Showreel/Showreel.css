@@ -38,3 +38,35 @@
   border-radius: 100%;
   cursor: pointer;
 }
+
+@media (max-width: 1000px) {
+  .showreel {
+    height: 50svh;
+  }
+
+  .showreel .showreel-container {
+    transform: scale(0.9);
+    border-radius: 1rem;
+  }
+
+  .showreel .volume-icon {
+    width: 4rem;
+    height: 4rem;
+  }
+
+  .showreel .volume-icon svg {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .showreel {
+    height: 40svh;
+  }
+  
+  .showreel .showreel-container {
+    transform: scale(1);
+    border-radius: 0;
+  }
+}

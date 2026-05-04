@@ -143,41 +143,81 @@ p.cap {
   stroke: none;
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 1024px) {
   h1 {
-    font-size: 3rem;
+    font-size: 5rem;
   }
 
   h2 {
-    font-size: 2rem;
+    font-size: 4rem;
   }
 
   h3 {
-    font-size: 1.5rem;
+    font-size: 3rem;
   }
 
   h4 {
-    font-size: 1rem;
+    font-size: 2.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 3.5rem;
+  }
+
+  h2 {
+    font-size: 2.75rem;
+  }
+
+  h3 {
+    font-size: 2.25rem;
+  }
+
+  h4 {
+    font-size: 1.75rem;
   }
 
   h1,
   h2,
   h3,
   h4 {
-    letter-spacing: 0 !important;
+    letter-spacing: -0.05rem !important;
   }
 
   p.lg {
-    font-size: 1.125rem;
+    font-size: 1.25rem;
   }
 
   p.sm {
-    font-size: 0.8rem;
+    font-size: 0.75rem;
     letter-spacing: 0.05rem;
   }
 
   .container {
-    padding: 1.25rem;
+    padding: 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 2.75rem;
+  }
+
+  h2 {
+    font-size: 2.25rem;
+  }
+
+  h3 {
+    font-size: 1.75rem;
+  }
+
+  h4 {
+    font-size: 1.5rem;
+  }
+
+  .container {
+    padding: 1rem;
   }
 }
 

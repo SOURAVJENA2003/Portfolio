@@ -3,7 +3,7 @@ import "./home.css";
 import Button from "@/components/Button/Button";
 import Showreel from "@/components/Showreel/Showreel";
 import FeaturedWork from "@/components/FeaturedWork/FeaturedWork";
-import ClientReviews from "@/components/ClientReviews/ClientReviews";
+import ServicesSection from "@/components/ClientReviews/ClientReviews";
 import Spotlight from "@/components/Spotlight/Spotlight";
 import CTACard from "@/components/CTACard/CTACard";
 import Footer from "@/components/Footer/Footer";
@@ -52,20 +52,16 @@ const Page = () => {
 
             <div className="hero-footer">
               <Copy animateOnScroll={false} delay={isInitialLoad ? 6.05 : 1.15}>
-                <p className="lg">
-                  Computer Science student with strong skills in DSA and
-                  full-stack web development. I build secure, efficient
-                  applications that solve real-world problems.
-                </p>
+                <p className="lg ">Computer Science student with strong skills in DSA and full-stack web development, building secure and efficient applications to solve real-world problems.</p>
               </Copy>
 
               <div className="hero-cta">
                 <Button delay={isInitialLoad ? 6.35 : 1.55} href="/studio">
                   About Sourav
                 </Button>
-                <div className="hero-theme-toggle" style={{ animationDelay: `${isInitialLoad ? 6.35 : 1.55}s` }}>
+                {/* <div className="hero-theme-toggle" style={{ animationDelay: `${isInitialLoad ? 6.35 : 1.55}s` }}>
                    <ThemeToggle />
-                </div>
+                </div> */}
               </div>
             </div>
           </div>
@@ -123,12 +119,12 @@ const Page = () => {
         </div>
       </section>
 
-      <section className="client-reviews-header-container">
+      <section className="services-header-container">
         <div className="container">
-          <div className="client-reviews-header-content">
-            <div className="client-reviews-header">
+          <div className="services-header-content">
+            <div className="services-header">
               <Copy animateOnScroll={true} delay={0.25}>
-                <h1>Collaborator Feedback</h1>
+                <h1>SERVICES</h1>
               </Copy>
             </div>
 
@@ -157,11 +153,10 @@ const Page = () => {
               </svg>
             </div>
 
-            <div className="client-reviews-header-copy">
+            <div className="services-header-copy">
               <Copy animateOnScroll={true} delay={0.25}>
                 <p className="lg">
-                  Feedback from collaborators and peers who have worked with me
-                  on various technical projects and challenges.
+                  I help turn ideas into polished digital products through full-stack development, secure backend systems, optimization, and problem-solving support.
                 </p>
               </Copy>
             </div>
@@ -169,7 +164,7 @@ const Page = () => {
         </div>
       </section>
 
-      <ClientReviews />
+      <ServicesSection />
 
       <Spotlight />
 

@@ -13,7 +13,7 @@
 }
 
 .hero .container .hero-content-main {
-  width: 65%;
+  width: 75%;
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -23,7 +23,7 @@
 }
 
 .hero .container .hero-content-main .hero-footer {
-  width: 50%;
+  width: 90%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -54,6 +54,11 @@
 
 .hero .container .hero-content-main .hero-footer p.mn {
   color: var(--base-300);
+}
+
+.hero .container .hero-content-main .hero-footer p.lg {
+  margin-top: 20px;;
+  font-size: 1.5rem;
 }
 
 .hero .container .hero-footer-outer {
@@ -92,7 +97,7 @@
 }
 
 .featured-work .featured-work-header {
-  width: 50%;
+  width: 60%;
 }
 
 .featured-work .featured-work-header-content .arrow {
@@ -103,7 +108,7 @@
   width: 50%;
 }
 
-.client-reviews-header-container {
+.services-header-container {
   position: relative;
   width: 100%;
   height: 100%;
@@ -111,9 +116,9 @@
   overflow: hidden;
 }
 
-.client-reviews-header-container .client-reviews-header-content {
+.services-header-container .services-header-content {
   margin: 0 auto;
-  width: 65%;
+  width: 100%;
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -123,45 +128,92 @@
   text-align: center;
 }
 
-.client-reviews-header-container .client-reviews-header {
+.services-header-container .services-header {
   width: 50%;
 }
 
-.client-reviews-header-container .client-reviews-header-content .arrow {
+.services-header-container .services-header-content .arrow {
   width: 3rem;
 }
 
-.client-reviews-header-container
-  .client-reviews-header-content
-  .client-reviews-header-copy {
+.services-header-container
+  .services-header-content
+  .services-header-copy {
   width: 50%;
 }
 
 @media (max-width: 1000px) {
-  .hero .container .hero-content-main,
+  .hero {
+    height: auto;
+    min-height: 100svh;
+  }
+
+  .hero .container .hero-content-main {
+    width: 100%;
+    justify-content: center;
+    gap: 3rem;
+    padding: 6rem 0;
+  }
+
   .hero .container .hero-content-main .hero-footer {
     width: 100%;
     justify-content: center;
     gap: 2rem;
   }
 
+  .hero .container .hero-footer-outer {
+    position: relative;
+    padding: 2rem 0;
+    margin-top: 2rem;
+  }
+
+  .hero .container .hero-footer-outer div {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    text-align: center;
+  }
+
   .featured-work .featured-work-header,
   .featured-work .featured-work-header-content,
   .featured-work .featured-work-header-content .featured-work-header-copy,
-  .client-reviews-header-container .client-reviews-header,
-  .client-reviews-header-container .client-reviews-header-content,
-  .client-reviews-header-container
-    .client-reviews-header-content
-    .client-reviews-header-copy {
+  .services-header-container .services-header,
+  .services-header-container .services-header-content,
+  .services-header-container
+    .services-header-content
+    .services-header-copy {
     width: 100%;
   }
 
   .featured-work-list {
-    padding: 8rem 0 !important;
+    padding: 4rem 0 !important;
   }
 
   .featured-work-list .row {
     width: 100% !important;
     flex-direction: column;
+    gap: 3rem;
+  }
+
+  .featured-work .featured-work-header-content,
+  .services-header-container .services-header-content {
+    gap: 3rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .hero-cta {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .hero-cta button,
+  .hero-cta a {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .hero-header h1 {
+    font-size: 2.5rem;
   }
 }

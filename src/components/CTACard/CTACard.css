@@ -59,20 +59,29 @@
 }
 
 @media (max-width: 1000px) {
+  .cta .container {
+    gap: 2rem;
+    padding-bottom: 4rem;
+  }
+
   .cta .cta-copy {
     width: 100%;
     flex-direction: column;
+    padding: 4rem 0 2rem 0;
+    gap: 1.5rem;
   }
 
   .cta .cta-card {
     width: 100%;
+    padding: 2rem 1.25rem;
   }
 
   .cta .cta-card .cta-card-copy {
     flex-direction: column;
+    gap: 1.5rem;
   }
 
-  .cta .container {
-    gap: 2rem;
+  .cta .cta-card .cta-card-copy .cta-card-col:nth-child(2) p:nth-child(2) {
+    margin-bottom: 2rem;
   }
 }
