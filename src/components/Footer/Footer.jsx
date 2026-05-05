@@ -6,28 +6,28 @@ import { IoMail } from "react-icons/io5";
 import Copy from "../Copy/Copy";
 
 const Footer = () => {
-  const [localTime, setLocalTime] = useState("");
+  // const [localTime, setLocalTime] = useState("");
 
-  useEffect(() => {
-    const updateLocalTime = () => {
-      const options = {
-        timeZone: "Asia/Kolkata",
-        hour: "2-digit",
-        minute: "2-digit",
-        second: "2-digit",
-        hour12: false,
-      };
+  // useEffect(() => {
+  //   const updateLocalTime = () => {
+  //     const options = {
+  //       timeZone: "Asia/Kolkata",
+  //       hour: "2-digit",
+  //       minute: "2-digit",
+  //       second: "2-digit",
+  //       hour12: false,
+  //     };
 
-      const formatter = new Intl.DateTimeFormat("en-US", options);
-      const localTimeString = formatter.format(new Date());
-      setLocalTime(localTimeString);
-    };
+  //     const formatter = new Intl.DateTimeFormat("en-US", options);
+  //     const localTimeString = formatter.format(new Date());
+  //     setLocalTime(localTimeString);
+  //   };
 
-    updateLocalTime();
-    const timeInterval = setInterval(updateLocalTime, 1000);
+  //   updateLocalTime();
+  //   const timeInterval = setInterval(updateLocalTime, 1000);
 
-    return () => clearInterval(timeInterval);
-  }, []);
+  //   return () => clearInterval(timeInterval);
+  // }, []);
 
   return (
     <footer>
