@@ -37,33 +37,45 @@ const Page = () => {
       <section className="hero">
         <div className="container">
           <div className="hero-content-main">
-            <div className="hero-header">
-              <Copy animateOnScroll={false} delay={isInitialLoad ? 5.75 : 0.75}>
-                <h1>Hi, I'm Sourav Jena</h1>
-                <h2>A Full-Stack Developer</h2>
-              </Copy>
-            </div>
-
-            <div className="hero-footer-outer">
-              <Copy animateOnScroll={false} delay={isInitialLoad ? 6.35 : 1.65}>
-                <p className="sm">&copy; Sourav Jena</p>
-                <p className="sm">( KIIT University )</p>
-              </Copy>
-            </div>
-
-            <div className="hero-footer">
-              <Copy animateOnScroll={false} delay={isInitialLoad ? 6.05 : 1.15}>
-                <p className="lg ">Computer Science student with strong skills in DSA and full-stack web development, building secure and efficient applications to solve real-world problems.</p>
-              </Copy>
+            <div className="hero-left">
+              <div className="hero-header">
+                <Copy animateOnScroll={false} delay={isInitialLoad ? 5.75 : 0.75}>
+                  <h1>Hi, I'm Sourav Jena</h1>
+                </Copy>
+                <Copy animateOnScroll={false} delay={isInitialLoad ? 6.05 : 1.15}>
+                  <h2>Full-Stack Developer</h2>
+                </Copy>
+              </div>
 
               <div className="hero-cta">
                 <Button delay={isInitialLoad ? 6.35 : 1.55} href="/studio">
                   About Sourav
                 </Button>
-                {/* <div className="hero-theme-toggle" style={{ animationDelay: `${isInitialLoad ? 6.35 : 1.55}s` }}>
-                   <ThemeToggle />
-                </div> */}
               </div>
+            </div>
+
+            <div className="hero-right">
+              <div className="hero-image-container" style={{ animationDelay: `${isInitialLoad ? 6.35 : 1.55}s` }}>
+                <img src="/spiderman.jpg" alt="Sourav Jena" />
+              </div>
+              <div className="hero-description">
+                <Copy animateOnScroll={false} delay={isInitialLoad ? 6.35 : 1.65}>
+                  <p className="lg">
+                    <span>DEVELOPER</span>
+                    <span>PROBLEM SOLVER</span>
+                    <span>TECH ENTHUSIAST</span>
+                  </p>
+                </Copy>
+              </div>
+            </div>
+
+            <div className="hero-footer-outer">
+              <Copy animateOnScroll={false} delay={isInitialLoad ? 6.65 : 1.85}>
+                <div className="hero-footer-copy">
+                  <p className="sm">&copy; Sourav Jena</p>
+                  <p className="sm">( KIIT University )</p>
+                </div>
+              </Copy>
             </div>
           </div>
         </div>

@@ -58,14 +58,15 @@ h3,
 h4 {
   text-transform: uppercase;
   font-family: "Big Shoulders Display";
-  font-weight: 900;
+  font-weight: 800;
   line-height: 0.9;
   letter-spacing: -0.125rem;
 }
 
 h1 {
-  font-size: 6rem;
+  font-size: 3rem;
   margin: 15px;
+  white-space: nowrap;
 }
 
 h2 {
