@@ -202,6 +202,11 @@ p.cap {
 }
 
 @media (max-width: 480px) {
+
+  .featured-work .featured-work-header-content h1{
+    font-size: 2.2rem;
+  }
+
   h1 {
     font-size: 2.75rem;
   }

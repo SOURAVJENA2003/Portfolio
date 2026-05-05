@@ -22,17 +22,18 @@
 }
 
 .studio-page .studio-header .container .studio-header-row:nth-child(1) {
-  display: flex;
-  justify-content: flex-end;
-}
-
-.studio-page .studio-header .container .studio-header-row:nth-child(2) {
+  margin-top: 30px;
   display: flex;
   justify-content: flex-start;
 }
 
+.studio-page .studio-header .container .studio-header-row:nth-child(2) {
+  display: flex;
+  justify-content: flex-end;
+}
+
 .studio-page .studio-header .container .studio-header-row h1 {
-  font-size: 14vw;
+  font-size: 10vw;
 }
 
 .studio-page .studio-copy .container {
@@ -69,7 +70,7 @@
   }
 
   .studio-page .studio-header .container .studio-header-row h1 {
-    font-size: 18vw;
+    font-size: 14vw;
   }
 
   .studio-page .studio-copy .container {
@@ -89,7 +90,7 @@
 
 @media (max-width: 480px) {
   .studio-page .studio-header .container .studio-header-row h1 {
-    font-size: 22vw;
+    font-size: 10vw;
   }
 }
 
