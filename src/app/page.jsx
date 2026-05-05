@@ -3,7 +3,7 @@ import "./home.css";
 import Button from "@/components/Button/Button";
 import Showreel from "@/components/Showreel/Showreel";
 import FeaturedWork from "@/components/FeaturedWork/FeaturedWork";
-import ServicesSection from "@/components/ClientReviews/ClientReviews";
+import ServicesSection from "@/components/Services/Services";
 import Spotlight from "@/components/Spotlight/Spotlight";
 import CTACard from "@/components/CTACard/CTACard";
 import Footer from "@/components/Footer/Footer";
@@ -39,7 +39,8 @@ const Page = () => {
           <div className="hero-content-main">
             <div className="hero-header">
               <Copy animateOnScroll={false} delay={isInitialLoad ? 5.75 : 0.75}>
-                <h1>Building Scalable Systems with Precision & Logic</h1>
+                <h1>Hi, I'm Sourav Jena</h1>
+                <h2>A Full-Stack Developer</h2>
               </Copy>
             </div>
 

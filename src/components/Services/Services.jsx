@@ -1,6 +1,6 @@
 "use client";
-import "./ClientReviews.css";
-import { servicesData } from "./clientReviewsData.js";
+import "./Services.css";
+import { servicesData } from "./ServicesData.js";
 import { useRef } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";

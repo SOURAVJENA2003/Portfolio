@@ -90,8 +90,8 @@
 @media (max-width: 1000px) {
   .services-section .service-card {
     height: auto;
-    min-height: 80svh;
-    padding: 6rem 1.25rem;
+    min-height: 10svh;
+    padding: 2rem 1.25rem;
   }
 
   .services-section .service-card-container {
@@ -99,7 +99,7 @@
     gap: 0;
     width: 100%;
     height: auto;
-    min-height: 400px;
+    min-height: 300px;
     padding: 2rem 1.25rem;
   }
 
