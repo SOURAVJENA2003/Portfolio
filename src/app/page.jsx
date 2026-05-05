@@ -1,7 +1,7 @@
 "use client";
 import "./home.css";
 import Button from "@/components/Button/Button";
-import Showreel from "@/components/Showreel/Showreel";
+import TechSkills from "@/components/TechSkills/TechSkills";
 import FeaturedWork from "@/components/FeaturedWork/FeaturedWork";
 import ServicesSection from "@/components/Services/Services";
 import Spotlight from "@/components/Spotlight/Spotlight";
@@ -43,7 +43,7 @@ const Page = () => {
                   <h1>Hi, I'm Sourav Jena</h1>
                 </Copy>
                 <Copy animateOnScroll={false} delay={isInitialLoad ? 6.05 : 1.15}>
-                  <h2>Full-Stack Developer</h2>
+                  <h2>A Full-Stack Developer</h2>
                 </Copy>
               </div>
 
@@ -61,7 +61,7 @@ const Page = () => {
               <div className="hero-description">
                 <Copy animateOnScroll={false} delay={isInitialLoad ? 6.35 : 1.65}>
                   <p className="lg">
-                    <span>DEVELOPER</span>
+                     <span>DEVELOPER</span>
                     <span>PROBLEM SOLVER</span>
                     <span>TECH ENTHUSIAST</span>
                   </p>
@@ -81,14 +81,18 @@ const Page = () => {
         </div>
       </section>
 
-      <Showreel />
+      <div className="section-divider"></div>
+
+      <TechSkills />
+
+      <div className="section-divider"></div>
 
       <section className="featured-work">
         <div className="container">
           <div className="featured-work-header-content">
             <div className="featured-work-header">
               <Copy animateOnScroll={true} delay={0.25}>
-                <h1>Selected Projects</h1>
+                <h1>Projects</h1>
               </Copy>
             </div>
 
@@ -132,7 +136,10 @@ const Page = () => {
         </div>
       </section>
 
+      <div className="section-divider"></div>
+
       <section className="services-header-container">
+
         <div className="container">
           <div className="services-header-content">
             <div className="services-header">
