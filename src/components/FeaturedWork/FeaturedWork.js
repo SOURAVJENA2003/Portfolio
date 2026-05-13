@@ -85,12 +85,23 @@ export default function FeaturedWork() {
       const handleClick = (e) => {
         const anchor = e.currentTarget;
         if (!anchor) return;
-        e.preventDefault();
         const href = anchor.getAttribute("href");
         if (!href) return;
+
+        if (href.startsWith("http") || href.startsWith("https")) {
+          return; // Allow default behavior for external links (standard anchor behavior)
+        }
+
+        e.preventDefault();
         navigateWithTransition(href);
       };
-      links.forEach((a) => a.addEventListener("click", handleClick));
+      links.forEach((a) => {
+        if (a.getAttribute("href").startsWith("http")) {
+          a.setAttribute("target", "_blank");
+          a.setAttribute("rel", "noopener noreferrer");
+        }
+        a.addEventListener("click", handleClick);
+      });
 
       return () => {
         links.forEach((a) => a.removeEventListener("click", handleClick));
