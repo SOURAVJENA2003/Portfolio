@@ -31,7 +31,7 @@ const Page = () => {
           </div>
 
           <div className="contact-mail">
-            <Button delay={1.3} href="mailto:souravjena466@gmail.com">
+            <Button delay={1.3} href="https://mail.google.com/mail/?view=cm&fs=1&to=souravjena466@gmail.com" target="_blank">
               souravjena466@gmail.com
             </Button>
           </div>

@@ -17,6 +17,7 @@ export default function Button({
   icon,
   animateOnScroll = false,
   delay = 0,
+  target,
 }) {
   const IconComponent = icon || HiLightningBolt;
   const { navigateWithTransition } = useViewTransition();
@@ -137,8 +138,15 @@ export default function Button({
       ref={buttonRef}
       href={href}
       className={`button button--${variant}`}
+      target={target}
       onClick={(e) => {
         if (!href) return;
+        
+        // Don't prevent default for external links (mailto, tel, http, https) or when target="_blank"
+        if (href.startsWith("mailto:") || href.startsWith("tel:") || href.startsWith("http://") || href.startsWith("https://") || target === "_blank") {
+          return;
+        }
+        
         e.preventDefault();
         navigateWithTransition(href);
       }}
