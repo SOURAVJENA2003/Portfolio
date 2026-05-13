@@ -529,7 +529,7 @@ const Menu = ({ pageRef }) => {
                 GitHub
               </a>
 
-              <a href="https://linkedin.com/in/sourav-jena" target="_blank">
+              <a href="https://www.linkedin.com/in/sourav-jena-44b368373" target="_blank">
                 LinkedIn
               </a>
             </div>
