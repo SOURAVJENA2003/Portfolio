@@ -125,7 +125,7 @@ const Preloader = () => {
             yPercent: 0,
             duration: 1,
             ease: "hop",
-            stagger: 0.025,
+            stagger: 0.075,
           },
           "-=5"
         );
