@@ -61,7 +61,7 @@ const Page = () => {
               <div className="hero-description">
                 <Copy animateOnScroll={false} delay={isInitialLoad ? 6.35 : 1.65}>
                   <p className="lg">
-                     <span>DEVELOPER</span>
+                    <span>DEVELOPER</span>
                     <span>PROBLEM SOLVER</span>
                     <span>TECH ENTHUSIAST</span>
                   </p>
@@ -182,10 +182,9 @@ const Page = () => {
             </div>
           </div>
         </div>
+        <ServicesSection />
       </section>
-
-      <ServicesSection />
-
+      
       <Spotlight />
 
       <CTACard />

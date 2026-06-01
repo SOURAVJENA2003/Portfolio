@@ -15,15 +15,15 @@ const skillsData = [
   },
   {
     category: "Backend",
-    skills: ["Node.js", "Express.js", "MongoDB", "REST APIs", "RazorPay Integration"],
+    skills: ["Node.js", "Express.js", "MongoDB", "PostgreSQL", "REST APIs", "RazorPay Integration"],
   },
   {
     category: "Languages",
-    skills: ["JavaScript", "Java", "Python", "C"],
+    skills: ["JavaScript", "Java", "Python", "C", "TypeScript"],
   },
   {
     category: "Tools & Others",
-    skills: ["Git / GitHub", "VS Code", "Postman"],
+    skills: ["Git / GitHub", "VS Code", "Postman", "Docker"],
   },
 ];
 

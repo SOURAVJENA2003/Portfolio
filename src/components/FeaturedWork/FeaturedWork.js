@@ -22,8 +22,8 @@ export default function FeaturedWork() {
         <a href="${project.route}" class="featured-work-item-link">
           <div class="featured-work-item-img">
            <div class="featured-work-item-copy">
-            <h3>${project.name}</h3>
-          </div>
+             <h3>${project.name}</h3>
+           </div>
             <img src="${project.img}" alt="${project.name}" />
           </div>
         </a>
@@ -88,7 +88,7 @@ export default function FeaturedWork() {
         const href = anchor.getAttribute("href");
         if (!href) return;
 
-        if (href.startsWith("http") || href.startsWith("https")) {
+        if (href.startsWith("https")) {
           return; // Allow default behavior for external links (standard anchor behavior)
         }
 
@@ -96,7 +96,7 @@ export default function FeaturedWork() {
         navigateWithTransition(href);
       };
       links.forEach((a) => {
-        if (a.getAttribute("href").startsWith("http")) {
+        if (a.getAttribute("href").startsWith("https")) {
           a.setAttribute("target", "_blank");
           a.setAttribute("rel", "noopener noreferrer");
         }

@@ -43,14 +43,14 @@ const ServicesSection = () => {
               scrollTriggerInstances.push(trigger);
             }
 
-            if (index < serviceCards.length - 1) {
-              const trigger = ScrollTrigger.create({
-                trigger: serviceCards[index + 1],
-                start: "top bottom",
-                end: "top top",
-              });
-              scrollTriggerInstances.push(trigger);
-            }
+            // if (index < serviceCards.length - 1) {
+            //   const trigger = ScrollTrigger.create({
+            //     trigger: serviceCards[index + 1],
+            //     start: "top bottom",
+            //     end: "top top",
+            //   });
+            //   scrollTriggerInstances.push(trigger);
+            // }
           });
         });
 
