@@ -31,6 +31,12 @@ export default function FeaturedWork() {
         return featuredWorkItem;
       };
 
+      const createSpacer = () => {
+        const spacer = document.createElement("div");
+        spacer.className = "featured-work-item spacer";
+        return spacer;
+      };
+
       const workContainer = featuredWorkContainerRef.current;
 
       workContainer.innerHTML = "";
@@ -39,13 +45,12 @@ export default function FeaturedWork() {
         const row = document.createElement("div");
         row.className = "row";
 
-        const leftItemIndex = i % projects.length;
-        const rightItemIndex = (i + 1) % projects.length;
+        row.appendChild(createFeaturedWorkItem(projects[i]));
 
-        row.appendChild(createFeaturedWorkItem(projects[leftItemIndex]));
-
-        if (i + 1 < projects.length * 2) {
-          row.appendChild(createFeaturedWorkItem(projects[rightItemIndex]));
+        if (i + 1 < projects.length) {
+          row.appendChild(createFeaturedWorkItem(projects[i + 1]));
+        } else {
+          row.appendChild(createSpacer());
         }
 
         workContainer.appendChild(row);

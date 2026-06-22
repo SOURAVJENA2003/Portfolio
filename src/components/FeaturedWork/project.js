@@ -10,5 +10,11 @@ export const projects = [
     description: "Secure Full-Stack Password Manager for credential handling.",
     img: "/featured-work/work-2.jpg",
     route: "https://github.com/SOURAVJENA2003/PassOP",
+  },
+  {
+    name: "Cricket turf booking platform",
+    description: "A simple cricket turf booking platform with a user-friendly interface and secure payment options.",
+    img: "/featured-work/work-3.jpg",
+    route: "https://cricket-turf-booking-platform.vercel.app/"
   }
 ];

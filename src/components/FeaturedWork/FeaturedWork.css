@@ -66,6 +66,11 @@
   color: inherit;
 }
 
+.featured-work-list .featured-work-item.spacer {
+  visibility: hidden;
+  pointer-events: none;
+}
+
 @media (max-width: 1000px) {
   .featured-work-list {
     padding: 4rem 1.25rem;
@@ -79,5 +84,9 @@
 
   .featured-work-list .featured-work-item-copy h3 {
     font-size: 1.25rem;
+  }
+
+  .featured-work-list .featured-work-item.spacer {
+    display: none;
   }
 }
